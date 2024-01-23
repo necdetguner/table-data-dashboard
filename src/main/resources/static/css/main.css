@@ -1,0 +1,46 @@
+.container-fluid {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.row {
+    margin: 0 0 15px;
+}
+
+.header-row {
+    margin-bottom: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: inset;
+}
+
+.logo {
+    text-align: center;
+    margin-bottom: 9px;
+}
+
+.title-column {
+    text-align: center;
+    padding-bottom: 6px;
+}
+
+.data-column {
+    max-height: calc(100vh - 320px);
+    overflow-y: auto;
+    padding-top: 1px;
+}
+
+.inputs-row {
+    border-bottom: inset;
+    padding-bottom: 30px;
+}
+
+.inputs {
+    justify-content: center;
+    padding-bottom: 6px;
+}
+
+.dt-buttons {
+    margin-left: 15px;
+    font-size: 13px;
+}

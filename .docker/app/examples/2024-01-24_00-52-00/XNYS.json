@@ -1,0 +1,1 @@
+[{"id":1,"name":"Apple","price":100.0,"quantity":100,"dailyChangeRate":0.01,"exchange":"XNYS"},{"id":6,"name":"Microsoft","price":600.0,"quantity":250,"dailyChangeRate":0.025,"exchange":"XNYS"},{"id":7,"name":"Amazon","price":700.0,"quantity":350,"dailyChangeRate":0.035,"exchange":"XNYS"}]
