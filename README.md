@@ -14,3 +14,8 @@ Before running the application, follow the steps below to set up the required en
 2. Go to the project root directory and run the following command to build the application: `make clean-build-up`
 
 ![web-interface.gif](doc%2Fweb-interface.gif)
+
+
+### Usage
+1. Open your web browser and navigate to http://localhost:8080.
+2. View the desired data through the web interface.
