@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Table Data Dashboard</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.13.7/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" type="text/css"
+          href="https://cdn.datatables.net/buttons/2.4.2/css/buttons.dataTables.min.css">
+
+</head>
+<body>
+
+<div class="container-fluid">
+    <div class="row header-row">
+        <div class="col-md-12 logo">
+            <a th:href="@{/}" title="Home">
+                <img th:src="@{/img/logo.png}" alt="Logo" width="10%">
+            </a>
+        </div>
+        <div class="col-md-12 logo">
+            <a th:href="@{/}" title="Home">
+                <img th:src="@{/img/service-name.png}" alt="Project Name" width="20%">
+            </a>
+        </div>
+    </div>
+
+    <div class="row inputs-row">
+        <div class="col-md-3"></div>
+        <div class="col-md-6">
+            <div class="input-group inputs">
+                <select class="custom-select" id="date">
+                    <option th:each="item : ${dateList}" th:text="${item}"></option>
+                </select>
+                <select class="custom-select" id="exchangeName">
+                    <option th:each="item : ${exchangeNameList}" th:text="${item}"></option>
+                </select>
+                <div class="input-group-append">
+                    <button class="btn btn-outline-danger" type="button" id="getDataBtn">Get Data</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3"></div>
+    </div>
+
+    <div class="row table-row">
+        <div class="col-md-1"></div>
+        <div class="col-md-10 table-column">
+            <div class="row">
+                <div class="col-md-12 title-column">
+                    <h5 id="tableHeader"></h5>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 data-column">
+                    <table id="sortableTable" class="table table-bordered table-hover table-sm">
+                        <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Price</th>
+                            <th>Quantity</th>
+                            <th>Daily Change Rate(%)</th>
+                        </tr>
+                        </thead>
+                        <tbody id="tableBody">
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-1"></div>
+    </div>
+</div>
+</div>
+</div>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/scripts.js"></script>
+<script src="https://cdn.datatables.net/1.13.7/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/buttons/2.4.2/js/dataTables.buttons.min.js"></script>
+<script type="text/javascript" charset="utf8"
+        src="https://cdn.datatables.net/buttons/2.4.2/js/buttons.html5.min.js"></script>
+
+</body>
+</html>
