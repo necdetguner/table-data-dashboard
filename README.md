@@ -18,4 +18,10 @@ Before running the application, follow the steps below to set up the required en
 
 ### Usage
 1. Open your web browser and navigate to http://localhost:8080.
-2. View the desired data through the web interface.
+2. You will be prompted to log in. Use the following credentials:
+   - Username: `dev`
+   - Password: `dev`
+
+   The application utilizes in-memory authentication with the provided credentials.
+
+3. View the desired data through the web interface.
